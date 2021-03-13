@@ -2,8 +2,8 @@
   <div>
     <LikeHeader></LikeHeader>
     <h3>{{totalNumber}}</h3>
-    <LikeNumber :totalNumber="totalNumber"></LikeNumber>
-    <LikeNumber :totalNumber="totalNumber"></LikeNumber>
+    <LikeNumber :total-number="totalNumber"></LikeNumber>
+    <LikeNumber :total-number="totalNumber"></LikeNumber>
   </div>
 </template>
 
