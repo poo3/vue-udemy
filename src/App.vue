@@ -1,7 +1,9 @@
 <template>
   <div>
-    <LikeHeader></LikeHeader>
-    <h3>{{totalNumber}}</h3>
+    <LikeHeader>
+      <h3>{{totalNumber}}</h3>
+      <h1>トータルのいいね数</h1>
+    </LikeHeader>
     <LikeNumber :totalNumber="totalNumber" @my-click="incrementNumber"></LikeNumber>
     <LikeNumber :totalNumber="totalNumber" @my-click="incrementNumber"></LikeNumber>
   </div>
