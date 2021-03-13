@@ -9,12 +9,7 @@
     <button @click="currentComponent = 'Home' ">Home</button>
     <button @click="currentComponent = 'About'">About</button>
     <component :is="currentComponent"></component>
-    <div>
-      <h2>イベントのフォーム</h2>
-      <label for="title">タイトル</label>
-      <input type="text" id="title" v-model="eventData.title">
-      <p>{{eventData.title}}</p>
-    </div>
+    <EventTitle v-model="eventData.title"></EventTitle>
   </div>
 </template>
 
@@ -22,12 +17,14 @@
 import LikeHeader from './components/LikeHeader.vue'
 import About from './components/About'
 import Home from './components/Home'
+import EventTitle from './components/EventTitle'
 
 export default{
   components: {
     LikeHeader,
     About,
-    Home
+    Home,
+    EventTitle
   },
   data(){
     return {
