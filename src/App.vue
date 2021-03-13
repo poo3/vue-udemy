@@ -1,6 +1,6 @@
 <template>
   <div>
-    <LikeHeader v-slot="slotProps">
+    <LikeHeader #default="slotProps">
       <h1>{{slotProps.user.firstName}}</h1>
       <h1>トータルのいいね数</h1>
       <h3>{{totalNumber}}</h3>
