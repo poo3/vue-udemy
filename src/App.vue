@@ -2,8 +2,8 @@
   <div>
     <LikeHeader></LikeHeader>
     <h3>{{totalNumber}}</h3>
-    <LikeNumber :total-number="totalNumber"></LikeNumber>
-    <LikeNumber :total-number="totalNumber"></LikeNumber>
+    <LikeNumber :totalNumber="totalNumber" @my-click="incrementNumber"></LikeNumber>
+    <LikeNumber :totalNumber="totalNumber" @my-click="incrementNumber"></LikeNumber>
   </div>
 </template>
 
@@ -16,7 +16,12 @@ export default{
   },
   data(){
     return {
-      totalNumber: '8'
+      totalNumber: 8
+    }
+  },
+  methods: {
+    incrementNumber(){
+      this.totalNumber += 1;
     }
   }
 }
