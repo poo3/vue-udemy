@@ -1,9 +1,9 @@
 <template>
   <div>
     <LikeHeader></LikeHeader>
-    <h3>{{number}}</h3>
-    <LikeNumber :number="number"></LikeNumber>
-    <LikeNumber :number="number"></LikeNumber>
+    <h3>{{totalNumber}}</h3>
+    <LikeNumber :totalNumber="totalNumber"></LikeNumber>
+    <LikeNumber :totalNumber="totalNumber"></LikeNumber>
   </div>
 </template>
 
@@ -16,7 +16,7 @@ export default{
   },
   data(){
     return {
-      number: '8'
+      totalNumber: '8'
     }
   }
 }
