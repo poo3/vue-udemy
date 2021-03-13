@@ -1,9 +1,6 @@
 <template>
   <div>
-    <slot name="title" :user="user"></slot>
-    <slot name="number">
-      デフォルトのいいね数が入ります
-    </slot>
+    <slot :user="user"></slot>
   </div>
 </template>
 
