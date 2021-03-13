@@ -1,7 +1,8 @@
 <template>
   <div>
     <LikeHeader>
-      <template v-slot:title>
+      <template v-slot:title="slotProps">
+        <h1>{{slotProps.user.firstName}}</h1>
         <h1>トータルのいいね数</h1>
       </template>
       <template v-slot:number>
