@@ -1,5 +1,8 @@
 <template>
+  <div>
   <p v-border:solid.round.shadow="{ width: '1px', color: 'red' }">Home</p>
+  <h2>{{ title | upperCase }}</h2>
+  </div>
 </template>
 
 <script>
@@ -17,5 +20,10 @@ export default {
       }
     },
   },
+  data(){
+    return {
+      title: 'Welcome to Tokyo'
+    }
+  }
 };
 </script>
