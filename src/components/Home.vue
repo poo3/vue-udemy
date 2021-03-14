@@ -1,3 +1,3 @@
 <template>
-  <p v-border:dotted="{width: '1px',color: 'red'}">Home</p>
+  <p v-border:solid.round.shadow="{width: '1px',color: 'red'}">Home</p>
 </template>
